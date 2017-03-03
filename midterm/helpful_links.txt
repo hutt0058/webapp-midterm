@@ -1,0 +1,7 @@
+http://www.cssscript.com/a-nice-to-do-list-app-with-angular-js/
+
+
+https://bootstrap-datepicker.readthedocs.io/en/latest/
+
+
+http://todomvc.com/examples/angularjs/#/active

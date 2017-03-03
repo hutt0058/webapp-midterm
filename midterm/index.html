@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <!-- BOOTSTRAP AND CSS SYNC -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="todo">
+    <ng-view></ng-view>
+    <div class="container">
+        <div class="row">
+            <section id="todoapp" class="col-md-12">
+                <!--- Header and form -->
+                <header id="head">
+                    <h1>Get This Done</h1>
+                    <form id=todo-form ng-submit="addTodo()">
+                        <input id="new-todo" placeholder="What do i need to do?" ng-model="newTodo" ng-disabled="saving" autofocus> </form>
+                </header>
+            </section>
+        </div>
+    </div>
+    <!-- ANGULAR SYNC -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+</body>
+
+</html>
